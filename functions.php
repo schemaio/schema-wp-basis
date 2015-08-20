@@ -17,7 +17,7 @@ function schema_client() {
     static $client;
 
     if (!isset($client)) {
-        require_once('inc/schema-php-client/lib/Schema.php');
+        require_once('lib/schema-php-client/lib/Schema.php');
         $client = new \Schema\Client('client_id', 'client_key', array(
             'cache' => array('path' => __DIR__.'/cache'),
             'session' => true
